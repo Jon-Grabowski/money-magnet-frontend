@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-
+      <h1 className=''>Money Magnet</h1>
     </div>
   );
 }
