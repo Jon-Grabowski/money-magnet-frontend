@@ -4,13 +4,15 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    colors:{
-      'mint-green':'#C0FFD0',
-      'money-green': '#009933',
-      'forest-green': '#00661F',
-      'magnetic-plum': '#32004C'
+    
+    extend: {
+      colors:{
+        'mint-green':'#C0FFD0',
+        'money-green': '#009933',
+        'forest-green': '#00661F',
+        'magnetic-plum': '#32004C'
+      }
     },
-    extend: {},
   },
   plugins: [],
 }
