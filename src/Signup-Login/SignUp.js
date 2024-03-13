@@ -10,7 +10,7 @@ function SignUp() {
     }
 
     return (
-        <div className='w-full flex'>
+        <div id='signup-wrapper' className='w-full flex'>
             <div className='sm:min-h-screen bg-black side-img'></div>
             <div id='login-form-wrapper' className='m-auto'>
                 <Logo styles={logoStyles}/>
