@@ -8,7 +8,7 @@ function Login() {
     const logoStyles = {
         'maxWidth':'13rem',
         'margin':'auto',
-        'margin-bottom':'2rem'
+        'marginBottom':'2rem'
     }
 
     return (
@@ -18,6 +18,7 @@ function Login() {
             </div>
             <div id='login-form-wrapper' className='m-auto'>
                 <Logo styles={logoStyles}/>
+                <h1 className='text-3xl text-forest-green font-extrabold underline mb-4'>Log-In</h1>
                 <LoginForm />
             </div>
         </div>

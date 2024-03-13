@@ -1,10 +1,9 @@
 .side-img{
-    aspect-ratio: 1 / 3;
+    aspect-ratio: 1 / 2;
     background-image: url('../../public/assests/money-stock-1-rotated.jpg');
     background-position: center;
 }
 
 #login-form-wrapper{
-    border:solid;
     width:100%;
 }

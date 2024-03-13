@@ -9,33 +9,36 @@ function LoginForm() {
 
     const formik = useFormik({
         initialValues,
-        onSubmit: (values)=>{console.log(values)}
+        onSubmit: (values, {resetForm})=>{
+            console.log(values)
+            resetForm({values: ''})
+        }
     });
 
     return (
-        <div className='m-auto'>
+        <div className='m-auto max-w-72'>
             <form onSubmit={formik.handleSubmit} className='flex flex-col justify-center items-center gap-y-2'>
-                <div className='border'>
-                    <label for='email'>Email:</label>
+                <div className='w-full flex justify-between items-center'>
+                    <label htmlFor='email' className='float-start'>Email:</label>
                     <input 
                         type='text' 
                         value={formik.values.email}
                         name='email'
                         onChange={formik.handleChange}
                         placeholder='email'
-                        className='border rounded p-2'
+                        className='border rounded p-2 float-end'
                         required
                     ></input>
                 </div>
-                <div>
-                <label for='password'>Password:</label>
+                <div className='w-full flex justify-between items-center'>
+                <label htmlFor='password' className='float-start'>Password:</label>
                     <input 
                         type='password' 
                         value={formik.values.password}
                         name='password'
                         onChange={formik.handleChange}
                         placeholder='password'
-                        className='border rounded p-2'
+                        className='border rounded p-2 float-end'
                         required
                     ></input>
                 </div>
