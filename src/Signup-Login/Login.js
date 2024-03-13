@@ -1,46 +1,25 @@
 import React from 'react'
-import { useFormik } from 'formik';
+import LoginForm from './LoginForm'
+import Logo from '../Logo'
+import './login.css'
+
 
 function Login() {
-
-    const initialValues = {
-        email:'',
-        password:''
+    const logoStyles = {
+        'maxWidth':'13rem',
+        'margin':'auto',
+        'margin-bottom':'2rem'
     }
 
-    const formik = useFormik({
-        initialValues,
-        onSubmit: (values)=>{console.log(values)}
-    });
-
     return (
-        <div>
-            <form onSubmit={formik.handleSubmit} className='flex flex-col gap-y-1'>
-                <input 
-                    type='text' 
-                    value={formik.values.email}
-                    name='email'
-                    onChange={formik.handleChange}
-                    placeholder='email...'
-                    className=''
-                    required
-                ></input>
-                <input 
-                    type='password' 
-                    value={formik.values.password}
-                    name='password'
-                    onChange={formik.handleChange}
-                    placeholder='password...'
-                    className=''
-                    required
-                ></input>
-                <button 
-                    className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' 
-                    type='submit'
-                >
-                    Log In
-                </button>
-            </form>
+        <div className='w-full flex'>
+            <div className='sm:min-h-screen bg-black side-img'>
+                {/* <img src='../assests/money-stock-1-rotated.jpg' alt='money' className='h-full'/> */}
+            </div>
+            <div id='login-form-wrapper' className='m-auto'>
+                <Logo styles={logoStyles}/>
+                <LoginForm />
+            </div>
         </div>
     )
 }
