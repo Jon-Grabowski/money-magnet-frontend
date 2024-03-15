@@ -10,9 +10,9 @@ function HomeNav() {
                 <LogoWithText />
             </div>
             <div className='w-1/3 items-center'>
-                Something Else
             </div>
             <div className='w-1/3 items-center'>
+                <Link to='/signup' className='float-end me-5'><button>Sign Up</button></Link>
                 <Link to='/login' className='float-end me-5'><button>Log In</button></Link>
             </div>
             
