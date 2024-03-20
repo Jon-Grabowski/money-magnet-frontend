@@ -12,10 +12,11 @@ function Login() {
     }
 
     return (
-        <div className='w-full flex'>
-            <div className='sm:min-h-screen bg-black side-img'>
-            </div>
-            <div id='login-form-wrapper' className='m-auto'>
+        <div id='login-page-wrapper' className='w-full min-h-screen flex border'>
+            
+            <div className='side-img w-1/2 hidden sm:block'></div>
+
+            <div id='login-form-wrapper' className='m-auto w-1/2'>
                 <Link className='inline-block mb-3' to='/'>
                     <Logo styles={logoStyles} />
                 </Link>
