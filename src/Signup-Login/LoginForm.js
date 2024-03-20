@@ -54,7 +54,7 @@ function LoginForm() {
                     <p className='text-sm'>Forget password?</p>
                 </div>
                 <button 
-                    className='bg-magnetic-plum hover:bg-blue-700 text-white font-bold py-2 px-4 w-full' 
+                    className='bg-magnetic-plum hover:bg-magnetic-plum-light text-white font-bold py-2 px-4 w-full' 
                     type='submit'
                 >
                     Log In

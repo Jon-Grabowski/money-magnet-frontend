@@ -7,9 +7,6 @@
     height: 100%;
     background-image: url('../../public/assests/stock-images/mm-stock-1.jpg');
     background-size: cover;
-    background-position: center;
-}
-
-#login-form-wrapper{
-    width:100%;
+    /* background-position: center; */
+    background-position-x: right;
 }

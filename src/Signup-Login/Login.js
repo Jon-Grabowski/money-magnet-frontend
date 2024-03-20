@@ -12,17 +12,18 @@ function Login() {
     }
 
     return (
-        <div id='login-page-wrapper' className='w-full min-h-screen flex border'>
-            
+        <div id='login-page-wrapper' className='w-full min-h-screen flex'>
+
             <div className='side-img w-1/2 hidden sm:block'></div>
 
-            <div id='login-form-wrapper' className='m-auto w-1/2'>
+            <div className='m-auto w-full'>
                 <Link className='inline-block mb-3' to='/'>
                     <Logo styles={logoStyles} />
                 </Link>
                 <p className='font-bold text-5xl' style={{fontFamily: 'Staatliches'}}>WELCOME BACK!</p>
                 <p className='mb-20'>Enter your details</p>
                 <LoginForm />
+                <p className='mt-1'>Don't have an account? <Link to='/signup'>Sign Up</Link></p>
             </div>
         </div>
     )
