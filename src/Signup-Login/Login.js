@@ -7,7 +7,7 @@ import './login.css'
 
 function Login() {
     const logoStyles = {
-        'maxWidth':'13rem',
+        'maxWidth':'7rem',
         'margin':'auto',
     }
 
@@ -19,7 +19,8 @@ function Login() {
                 <Link className='inline-block mb-3' to='/'>
                     <Logo styles={logoStyles} />
                 </Link>
-                <h1 className='text-3xl text-forest-green font-extrabold underline mb-4'>Log-In</h1>
+                <p className='font-bold text-5xl' style={{fontFamily: 'Staatliches'}}>WELCOME BACK!</p>
+                <p className='mb-20'>Enter your details</p>
                 <LoginForm />
             </div>
         </div>
