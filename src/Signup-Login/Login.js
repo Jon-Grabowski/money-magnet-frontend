@@ -23,7 +23,7 @@ function Login() {
                 <p className='font-bold text-5xl' style={{fontFamily: 'Staatliches'}}>WELCOME BACK!</p>
                 <p className='mb-20'>Enter your details</p>
                 <LoginForm />
-                <p className='mt-1'>Don't have an account? <Link to='/signup'>Sign Up</Link></p>
+                <p className='mt-5'>Don't have an account? <Link to='/signup'>Sign Up</Link></p>
             </div>
         </div>
     )
