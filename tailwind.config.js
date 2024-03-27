@@ -10,7 +10,8 @@ module.exports = {
         'mint-green':'#C0FFD0',
         'money-green': '#009933',
         'forest-green': '#00661F',
-        'magnetic-plum': '#32004C'
+        'magnetic-plum': '#32004C',
+        'magnetic-plum-light':'#53047c'
       }
     },
   },

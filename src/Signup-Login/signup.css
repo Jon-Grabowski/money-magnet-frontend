@@ -1,12 +1,13 @@
-#login-page-wrapper{
+#signup-wrapper{
     justify-content: center;
     align-items: center;
 }
-.side-img{
+
+.signup-side-img{
     width: 80%;
     height: 100%;
     background-image: url('../../public/assests/stock-images/mm-stock-1.jpg');
     background-size: cover;
     /* background-position: center; */
-    background-position-x: right;
+    background-position-x: left;
 }
